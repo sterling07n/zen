@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation classes for video showcase */
+.animate-fade-in {
+  animation: fadeIn 1.2s ease-in-out both;
+}
+
+.animate-slide-up {
+  animation: slideUp 1.2s ease-in-out both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+/* Moving banner animation */
+.animate-scroll-left {
+  animation: scroll-left 12s linear infinite;
+}
+
+.pl-full {
+  padding-left: 100%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
